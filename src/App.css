@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
+}
+
+.App{
+  width:90%;
+  margin:0 auto;
+}
+
+.first{
+  position: absolute;
+  width:953.92px;
+  height:352px;
+  background-color: #F4F5F5;
+  border-radius: 8px;
+  left: calc(50% - 953.92px/2 + 0.5px);
+  top: 290px;
+  box-shadow: 0px 13px 10px -15px #D3D3D3;    
+}
+
+.second{
+position: absolute;
+width: 1006.92px;
+height: 352px;
+left: calc(50% - 1006.92px/2 + 0.5px);
+top: 280px;
+background: #F4F5F5;
+border-radius: 8px;
+  box-shadow: 0px 14px 10px -15px #D3D3D3;    
+}
+
+.sphere1{
+  position: absolute;
+  z-index:-1;
+  top:60vh;
+  left:0;
+  animation-name: floating1;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.sphere2{
+  position: absolute;
+  z-index:-1;
+  top:70vh;
+  left:2px;
+  animation-name: floating2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.sphere3{
+  position: absolute;
+  z-index:-1;
+  top:75vh;
+  right:2px;
+  animation-name: floating3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.sphere4{
+  position: absolute;
+  z-index:-1;
+  right:5vw;
+  top:10vh;
+  animation-name: floating4;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.sphere5{
+  position: absolute;
+  z-index:-1;
+  right:260px;
+  top:85vh;
+  animation-name: floating5;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating1 {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, -400px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+@keyframes floating2 {
+  0% { transform: translate(0px,  0); }
+  50%  { transform: translate(90vh, 15vh); }
+  100%   { transform: translate(-0px, 0); }   
+}
+
+@keyframes floating3 {
+  0% { transform: translate(0px,  0px); }
+  50%  { transform: translate(-200px, -200px); }
+  100%   { transform: translate(-0px, -0px); } 
+}
+
+@keyframes floating4 {
+from {
+  transform: rotate(0deg)
+             translate(100px)
+             rotate(0deg);
+}
+to {
+  transform: rotate(360deg)
+             translate(100px) 
+             rotate(-360deg);
+}
+}
+
+@keyframes floating5 {
+  0% { transform: rotateY(0)
+                  translate(0px,  0); }
+  50%{transform: rotateY(45deg)
+                 translate(-200px, 0);}
+  100%   { transform: rotateY(180deg) 
+                  translate(0px,  0); }
+}
+
+@media screen and (max-width:1280px) {
+  .first{
+    width:400px;
+    left: calc(50% - 400px/2 + 0.5px);
+    top:80px;
+  }
+  .second{
+    width:500px;
+    left: calc(50% - 500px/2 + 0.5px);
+    top:70px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .first{
+    width:240px;
+    left: calc(50% - 240px/2 + 0.5px);
+    top:230px;
+  }
+  .second{
+    width:270px;
+    left: calc(50% - 270px/2 + 0.5px);
+    top:220px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .first{
+    left:50px;
+  }
+  .second{
+    left:40px;
+  }
+}
