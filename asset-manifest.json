@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/languify-carousel/static/css/main.9c85c3eb.css",
+    "main.js": "/languify-carousel/static/js/main.17bcea4e.js",
+    "index.html": "/languify-carousel/index.html",
+    "main.9c85c3eb.css.map": "/languify-carousel/static/css/main.9c85c3eb.css.map",
+    "main.17bcea4e.js.map": "/languify-carousel/static/js/main.17bcea4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c85c3eb.css",
+    "static/js/main.17bcea4e.js"
+  ]
+}
